@@ -76,7 +76,8 @@ require dirname(__DIR__) . '/parts/header.php';
                 </form>
               <?php endif;?>
               <div class='text-center'>
-                    <?php echo $message['fromUser'];?>
+                    <label for="usermeg" class="form-label">Content</label>
+                    <input type="text" class="form-control" id='usermeg;>
               </div>
             </div>
           </div>
@@ -108,7 +109,9 @@ require dirname(__DIR__) . '/parts/header.php';
                 <?php endif; ?>
                 <div>
                     <div class='text-center'>
-                        <?php echo Message::getAllMessages('fromSeller')?>
+                    
+                        <label for="sellermeg" class="form-label">Reply</label>
+                        <input type="text" class="form-control" id='sellermeg>
                     </div>
                 </div>
             </div>
