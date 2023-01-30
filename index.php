@@ -1,5 +1,6 @@
 <?php
-// session_set_cookie_params((60*60*24*31), '/', '.cloudwaysapps.com');
+session_id('project');
+session_set_cookie_params((60*60*24*31), '/', '.cloudwaysapps.com');
 session_start();
 
 require 'config.php';
